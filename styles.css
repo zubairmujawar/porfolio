@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,600;0,700;1,200;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,200;1,300;1,500;1,600&family=Raleway:ital,wght@0,200;0,300;0,600;0,700;1,200;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    overflow-x: hidden;
+}
+
+#welcome-section {
+    width: 99vw;
+    height: 100vh;
+    background: #202022;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar {
+    width: 99vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 67px;
+    background: red;
+    position: fixed;
+    z-index: 99;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    right: 0;
+    text-decoration: none;
+    list-style: none;
+    width: 70%;
+
+}
+#navbar ul li{
+    padding: 15px;
+    text-align: center;
+}
+.logo{
+    width: 20%;
+}
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    /* padding-right: 1rem; */
+    font-size: 1.5rem;
+}
+
+
+#navbar ul li:hover {
+    background-color: blue;
+}
+
+.main-info {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-info h1 {
+    font-size: 65px;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+.main-info p {
+    font-size: 1.8rem;
+    color: red;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'poppins';
+}
+
+.project-sec {
+    width: 99vw;
+    height: 130vh;
+    background-color: rgb(46, 141, 209);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-sec h2 {
+    font-size: 40px;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+#projects {
+    width: 70%;
+    padding: 2rem;
+    height: 70%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.card {
+    width: 20vw;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#profile-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid yellow; */
+    text-decoration: none;
+    transition: ease-in-out 0.5s;
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+#profile-link img {
+    width: 20vw;
+    height: 30vw;
+    /* padding: 5px; */
+    object-fit: cover;
+    /* border: 2px solid red; */
+    transition: ease-in-out 0.5s;
+    border-radius: 15px 15px 0 0;
+    /* &:hover {
+        transform: scale(1.03);
+    } */
+}
+
+#project-title {
+    text-transform: capitalize;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #303841;
+    color: white;
+    transition: all 0.3s;
+    border-radius: 0px 0px 15px 15px;
+
+    &:hover {
+        background-color: #202022;
+        color: rgb(222, 81, 81);
+        /* transform: scale(1.03); */
+    }
+}
+.btn{
+    padding: 1vw;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.2s;
+    background-color:#202022;
+    color: white;
+    &:hover {
+        background-color: red;
+    }
+}
+/* ---------- contact -------- */
+.contact{
+    width: 99vw;
+    height: 50vh;
+    background-color: #303841;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.contact h1 {
+    font-size: 67px;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+.contact p{
+    font-size: 50px;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: italic;
+}
+.icons{
+    width: 70%;
+    height: 40%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons a{
+    text-decoration: none;
+    padding: 1vw;
+    border-radius: 10px;
+    background-color: #e3e3e3;
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgb(198, 194, 178);
+    &:hover{
+        background-color: rgb(73 213 207);
+        color: #dd4e47;
+        filter: invert(1);
+    }
+}
+.footer{
+    width: 99vw;
+    height: 5vh;
+    background-color: #202022;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    font-size: 1.5vw;
+}
+.icons a img{
+    width: 30px;
+    height: 30px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.icon p{
+    font-size: 20px;
+    color: black;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .main-info h1 {
+        font-size: 3rem;
+        color: white;
+        font-family: 'Raleway';
+        font-weight: 700;
+    }
+    #welcome-section {
+        /* width: 100vw; */
+        height: 100vh;
+        background: #202022;
+        
+    }
+    .project-sec h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .project-sec{
+        font-size: 20px;
+        text-align: center;
+        justify-content: flex-start;
+        height: 195vh;
+    }
+    .card {
+        width: 40vw;
+        height: 30vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    #profile-link {
+        height: 70vw;
+        display: flex;
+        justify-content: center;
+        width: 70vw;
+    }
+    #projects{
+        /* padding: 5px; */
+        height: 60vh;
+        width: 40vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    #project-title {
+        width: 10vw;
+        height: 8%;
+        border-radius: 15px 0px 0px 15px;
+    }
+    #profile-link img {
+        width: 80%;
+        height: 60%;
+        /* padding: 5px; */
+        background-repeat: no-repeat;
+    }
+    
+    #project-title {
+        width: 80%;
+        height: 10%;
+        font-size: 1rem;
+    }
+    .contact{
+        width: 100vw;
+        height: 60vh;
+    }
+    .contact h1{
+        font-size: 30px;
+    }
+    .contact p{
+        font-size: 20px;
+    }
+    .footer{
+        height: 8vh;
+        background-color: #202022;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer p{
+        font-size: 5vw;
+    }
+    .icons a img{
+        width: 20px;
+        height: 20px;
+    }
+    .icons a{
+        min-width: 150px;
+        min-height: 30px;
+        padding: 5px;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .icon p{
+        font-size: 20px;
+        color: black;
+    }
+    #navbar ul li a{
+        font-size: 1.2rem;
+    }
+    
+  }
