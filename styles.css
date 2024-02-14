@@ -4,10 +4,10 @@
 * {
     padding: 0;
     margin: 0;
-    
 }
 body{
     overflow-x: hidden;
+    scroll-behavior: auto;
 }
 
 #welcome-section {
@@ -28,6 +28,12 @@ body{
     background: red;
     position: fixed;
     z-index: 99;
+}
+#navbar img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 #navbar ul {
@@ -68,17 +74,18 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    position: absolute;
 }
 
 .main-info h1 {
-    font-size: 65px;
+    font-size: 8rem;
     color: white;
     font-family: 'Raleway';
     font-weight: 700;
 }
 
 .main-info p {
-    font-size: 1.8rem;
+    font-size: 5rem;
     color: red;
     font-style: italic;
     font-weight: 300;
@@ -259,18 +266,34 @@ body{
     body {
       background-color: lightblue;
     }
+    #video-background {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+    #welcome-section {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        z-index: 1;
+    }
     .main-info h1 {
         font-size: 3rem;
         color: white;
         font-family: 'Raleway';
         font-weight: 700;
     }
-    #welcome-section {
-        /* width: 100vw; */
+    /* #welcome-section {
+        width: 100vw;
         height: 100vh;
-        background: #202022;
-        
-    }
+        background: url(./black-13495.mp4);
+        background-size: cover;
+    } */
     .project-sec h2 {
         font-size: 30px;
         text-align: center;
@@ -278,6 +301,7 @@ body{
     }
     .project-sec{
         font-size: 20px;
+        position: relative;
         text-align: center;
         justify-content: flex-start;
         height: 195vh;

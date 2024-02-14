@@ -8,24 +8,34 @@
         <title>Zubair</title>
     </head>
     <body>
+        <!-- <video id="video-background" autoplay muted loop>
+            <source src="./black-13495.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
         <main id="welcome-section">
             <nav id="navbar">
-                <h2>logo</h2>
+                <img src="./zm-logo.png" alt="logo">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
 
             </nav>
-            <div class="main-info">
+            <video id="video-background" autoplay muted loop style="width: 100vw;
+            height: 100vh;
+            object-fit: cover;">
+                <source src="./black-13495.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="main-info" id="about"> 
                 <h1>
                     Hey I am Zubair
                 </h1>
                 <p>a web developer</p>
             </div>
         </main>
-        <section class="project-sec">
+        <section class="project-sec" id="work">
             <h2>
                 These are some of my projects
             </h2>
@@ -69,14 +79,14 @@
             </div>
             <button class="btn">See more</button>
         </section>
-        <section class="contact">
+        <section class="contact" id="Contact">
             <h1>Let's work together...</h1>
             <p>How do you take your coffee?</p>
             <div class="icons">
-                <a href="#"><div class="icon"><img src="./social-media.png" alt="img"><p>Facebook</p></div></a>
-                <a href="#"><div class="icon"><img src="./github.png" alt="img"><p>GitHub</p></div></a>   
-                <a href="#"><div class="icon"><img src="./email.png" alt="img"><p>Send a mail</p></div></a>
-                <a href="#"><div class="icon"><img src="./phone-call.png" alt="img"><p>Call me</p></div></a>
+                <a href="https://www.instagram.com/zubair_mjr/" target="_blank"><div class="icon"><img src="./instagram.png" alt="img"><p>Instagram</p></div></a>
+                <a href="https://github.com/zubairmujawar" target="_blank"><div class="icon"><img src="./github.png" alt="img"><p>GitHub</p></div></a>   
+                <a href="mailto:mujawarzubair167@gmail.com" target="_blank"><div class="icon"><img src="./email.png" alt="img"><p>Send a mail</p></div></a>
+                <!-- <a href="#" target="_blank"><div class="icon" ><img src="./phone-call.png" alt="img"><p>Call me</p></div></a> -->
             </div>
         </section>
         <footer class="footer">
